@@ -106,8 +106,8 @@ var greatestDecreaseMonth = "";
 Initialisation: creates variable i (or index), and sets its value as 0 (var i=0;). This variable acts as the counter.
 Condition: sets the number of times the loop should run for (i<numberOfMonths;). This loop will run based on the numberOfMonths value which is 86.
 Update: Every time the loop runs the statements in the curly braces, it adds one to the counter (i++).
-Calculates value in the current month returning the value 1 for each array in the dataset.
-Calculates the total Profit/Losses adding up the value calculated for each month.
+Gets the current month Profit/Loss value that is stored in each array in the dataset.
+Calculates the total Profit/Losses adding up the Profit/Loss value of each month.
 */
 for (var i = 0; i < numberOfMonths; i++) {
   currentMonth = finances[i][1];
@@ -116,8 +116,8 @@ for (var i = 0; i < numberOfMonths; i++) {
   /* Uses an if statement in the same loop and sets the condition if (i<0) is true -> execute the statement in the curly braces.
   Statement: the month to month change (monthChange) is equal to the current month's value (currentMonth) minus the previous month's value (previousMonth).
   After the if statement but still inside the loop the value of the previousMonth is set to be equal as the value of the currentMonth.
-  Also, the total difference between months is calculated adding the totalChange initial value which is 0 to the monthChange value so the value of the month to month difference between months in the dataset.
-  Outside of the for loop, the average difference between months (averageChange) is calculated dividing the total difference by the total number of months -1 (as the first month is not counted).
+  The total difference between months is calculated adding the totalChange initial value which is 0 to the monthChange value so the difference between months in the dataset calculated on every iteration of the loop.
+  Outside of the for loop, the average difference between months (averageChange) is calculated dividing the total difference by the total number of months -1 (because there is one less change than there are months).
   The Math.round method is used to round the number to its nearest 100th (line 142).
   */
   if (i > 0) {
