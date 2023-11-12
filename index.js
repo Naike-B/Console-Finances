@@ -140,3 +140,10 @@ for (var i = 0; i < numberOfMonths; i++) {
   }
 }
 averageChange = Math.round(totalChange / (numberOfMonths - 1) * 100) / 100;
+// Logs data to console
+console.log("Financial Analysis\n---------------------");
+console.log("Total Months: " + numberOfMonths);
+console.log("Total: $" + totalProfitLosses);
+console.log("Average Change: " + averageChange);
+console.log("Greatest Increase in Profits/Losses: " + greatestIncreaseMonth, "($"+greatestIncrease+")");
+console.log("Greatest Decrease in Profits/Losses: " + greatestDecreaseMonth, "($"+greatestDecrease+")");
