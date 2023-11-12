@@ -17,10 +17,14 @@ There you should see the following data:
 
 Financial Analysis
 
-Total Months: 86
+Total Months: 86 
+
 Total: $38382578
+
 Average Change: -2315.12
+
 Greatest Increase in Profits/Losses: Feb-2012 ($1926159)
+
 Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
 
 The total of Months in the period analysed, the total Profit/Losses over the entire period, the total average difference between months as well as the greatest increase and decrease in Profit/Losses and in which month and year it occurred.
