@@ -16,7 +16,7 @@ To view the financial analysis, navigate to [Console - Finances](https://naike-b
 There you should see the following data: 
 
 Financial Analysis
----------------------
+
 Total Months: 86
 Total: $38382578
 Average Change: -2315.12
