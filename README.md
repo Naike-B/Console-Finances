@@ -11,11 +11,11 @@ N/A
 
 ## Usage
 
-To view the financial analysis, navigate to ![Webpage with suggestion to open the DevTools](https://naike-b.github.io/Console-Finances/) open the Chrome DevTools by pressing Coomand+Option+I (MacOS) or Control+Shift+I (Windows). A console panel should open either below or to the side of the Webpage in the browser. 
+To view the financial analysis, navigate to [Console - Finances](https://naike-b.github.io/Console-Finances/) open the Chrome DevTools by pressing Coomand+Option+I (MacOS) or Control+Shift+I (Windows). A console panel should open either below or to the side of the Webpage in the browser. 
 
 There you will see the analysis of some financial data with the total of Months in the period analysed, the total Profit/Losses over the entire period, the total average difference between months, and the greatest increase and decrease in Profit/Losses with the year and month they occurred.
 
-![Webpage with open DevTools](images/finance-console.png)
+![alt Webpage with open DevTools](images/finance-console.png)
 
 ## Credits
 
