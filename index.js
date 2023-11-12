@@ -1,3 +1,4 @@
+// Dataset composed of arrays with two fields: Dates and Profit/Losses 
 var finances = [
   ['Jan-2010', 867884],
   ['Feb-2010', 984655],
@@ -86,3 +87,16 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+// Sets variables for the calculations required to analyse the data in the variable finances
+var numberOfMonths = finances.length; // Total number of months included in the dataset
+var currentMonth = 0; // Value is set to 0 - Indicates that the variable stores a numeric value
+var totalProfitLosses = 0; // Value is set to 0 - Indicates that the variable stores a numeric value
+var previousMonth = 0; // Value is set to 0 - Indicates that the variable stores a numeric value
+var monthChange = 0; // Value is set to 0 - Indicates that the variable stores a numeric value
+var totalChange = 0; // Value is set to 0 - Indicates that the variable stores a numeric value
+var averageChange = 0; // Value is set to 0 - Indicates that the variable stores a numeric value
+var greatestIncrease = 0; // Value is set to 0 - Indicates that the variable stores a numeric value
+var greatestIncreaseMonth = "";
+var greatestDecrease= 0; // Value is set to 0 - Indicates that the variable stores a numeric value
+var greatestDecreaseMonth = "";
