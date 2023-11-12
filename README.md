@@ -2,9 +2,9 @@
 
 ## Description
 
-This page was created to display some financial data in the console. The data was calculated using JavaScript.
+This page was created to display some financial data in the console. The data was obtained using JavaScript.
 
-While working on this project, I learned about the basics of JavaScript. I learned how to use it to run calculations including adding up values contained in a series of arrays within an array, how to calculate an average comparing values and how to get the greatest increase and decrease between compared values.
+While working on this project, I learned about the basics of JavaScript. I learned how to use it to run calculations including adding up values contained in a series of arrays within an array and to calculate an average comparing values. I also learned how to get the greatest increase and decrease between compared values.
 
 ## Installation
 N/A
