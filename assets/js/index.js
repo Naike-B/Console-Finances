@@ -89,7 +89,7 @@ var finances = [
 ];
 
 // Sets variables for the calculations required to analyse the data in the variable finances
-var numberOfMonths = finances.length; // Total number of months included in the dataset
+var numberOfMonths = finances.length; // Uses .length to get the total number of months included in the variable finances
 var currentMonth = 0; // Value is set to 0 - Indicates that the variable stores a numeric value
 var totalProfitLosses = 0; // Value is set to 0 - Indicates that the variable stores a numeric value
 var previousMonth = 0; // Value is set to 0 - Indicates that the variable stores a numeric value
@@ -102,7 +102,7 @@ var greatestDecrease = 0; // Value is set to 0 - Indicates that the variable sto
 var greatestDecreaseMonth = ""; // Value is set to "" - Indicates that the variable stores a string
 
 // Net total amount of Profit/Losses over the entire period
-/* Uses a for loop make calculations using the values stored in the finances variable
+/* Uses a for loop to make calculations using the values stored in the finances variable
 Initialisation: creates variable i (or index), and sets its value as 0 (var i=0;). This variable acts as the counter.
 Condition: sets the number of times the loop should run for (i<numberOfMonths;). This loop will run based on the numberOfMonths value which is 86.
 Update: Every time the loop runs the statements in the curly braces, it adds one to the counter (i++).
@@ -117,8 +117,6 @@ for (var i = 0; i < numberOfMonths; i++) {
   Statement: the month to month change (monthChange) is equal to the current month's value (currentMonth) minus the previous month's value (previousMonth).
   After the if statement but still inside the loop the value of the previousMonth is set to be equal as the value of the currentMonth.
   The total difference between months is calculated adding the totalChange initial value which is 0 to the monthChange value so the difference between months in the dataset calculated on every iteration of the loop.
-  Outside of the for loop, the average difference between months (averageChange) is calculated dividing the total difference by the total number of months -1 (because there is one less change than there are months).
-  The Math.round method is used to round the number to its nearest 100th (line 142).
   */
   if (i > 0) {
     monthChange = currentMonth - previousMonth;
@@ -139,6 +137,7 @@ for (var i = 0; i < numberOfMonths; i++) {
     greatestDecreaseMonth = finances[i][0];
   }
 }
+/* Outside of the for loop, the average difference between months (averageChange) is calculated dividing the total difference by the total number of months -1 (because there is one less change than there are months).The Math.round method is used to round the number to its nearest 100th */
 averageChange = Math.round(totalChange / (numberOfMonths - 1) * 100) / 100;
 // Logs data to console
-console.log("Financial Analysis\n---------------------" + "\n" + "Total Months: " + numberOfMonths + "\n" + "Total: $" + totalProfitLosses + "\n" + "Average Change: " + averageChange + "\n" + "Greatest Increase in Profits/Losses: " + greatestIncreaseMonth, "($"+greatestIncrease+")" + "\n" + "Greatest Decrease in Profits/Losses: " + greatestDecreaseMonth, "($"+greatestDecrease+")");
+console.log("Financial Analysis\n---------------------" + "\n" + "Total Months: " + numberOfMonths + "\n" + "Total: $" + totalProfitLosses + "\n" + "Average Change: " + averageChange + "\n" + "Greatest Increase in Profits/Losses: " + greatestIncreaseMonth, "($" + greatestIncrease + ")" + "\n" + "Greatest Decrease in Profits/Losses: " + greatestDecreaseMonth, "($" + greatestDecrease + ")");
