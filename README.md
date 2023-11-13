@@ -29,7 +29,7 @@ Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
 
 The total of Months in the period analysed, the total Profit/Losses over the entire period, the total average difference between months as well as the greatest increase and decrease in Profit/Losses and in which month and year it occurred.
 
-![alt Webpage with open DevTools](images/finance-console.png)
+![alt Webpage with open DevTools](assets/images/finance-console.png)
 
 ## Credits
 

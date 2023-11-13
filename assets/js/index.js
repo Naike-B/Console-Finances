@@ -97,12 +97,12 @@ var monthChange = 0; // Value is set to 0 - Indicates that the variable stores a
 var totalChange = 0; // Value is set to 0 - Indicates that the variable stores a numeric value
 var averageChange = 0; // Value is set to 0 - Indicates that the variable stores a numeric value
 var greatestIncrease = 0; // Value is set to 0 - Indicates that the variable stores a numeric value
-var greatestIncreaseMonth = "";
+var greatestIncreaseMonth = ""; // Value is set to "" - Indicates that the variable stores a string
 var greatestDecrease = 0; // Value is set to 0 - Indicates that the variable stores a numeric value
-var greatestDecreaseMonth = "";
+var greatestDecreaseMonth = ""; // Value is set to "" - Indicates that the variable stores a string
 
 // Net total amount of Profit/Losses over the entire period
-/* Uses a for loop to add up the numeric values included in the dataset.
+/* Uses a for loop make calculations using the values stored in the finances variable
 Initialisation: creates variable i (or index), and sets its value as 0 (var i=0;). This variable acts as the counter.
 Condition: sets the number of times the loop should run for (i<numberOfMonths;). This loop will run based on the numberOfMonths value which is 86.
 Update: Every time the loop runs the statements in the curly braces, it adds one to the counter (i++).
@@ -141,9 +141,4 @@ for (var i = 0; i < numberOfMonths; i++) {
 }
 averageChange = Math.round(totalChange / (numberOfMonths - 1) * 100) / 100;
 // Logs data to console
-console.log("Financial Analysis\n---------------------");
-console.log("Total Months: " + numberOfMonths);
-console.log("Total: $" + totalProfitLosses);
-console.log("Average Change: " + averageChange);
-console.log("Greatest Increase in Profits/Losses: " + greatestIncreaseMonth, "($"+greatestIncrease+")");
-console.log("Greatest Decrease in Profits/Losses: " + greatestDecreaseMonth, "($"+greatestDecrease+")");
+console.log("Financial Analysis\n---------------------" + "\n" + "Total Months: " + numberOfMonths + "\n" + "Total: $" + totalProfitLosses + "\n" + "Average Change: " + averageChange + "\n" + "Greatest Increase in Profits/Losses: " + greatestIncreaseMonth, "($"+greatestIncrease+")" + "\n" + "Greatest Decrease in Profits/Losses: " + greatestDecreaseMonth, "($"+greatestDecrease+")");
